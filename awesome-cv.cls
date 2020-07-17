@@ -373,7 +373,7 @@
 \newcommand{\acvHeaderIconSep}{\space}
 \newcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \newcommand{\acvHeaderAfterSocialSkip}{6mm}
-\newcommand{\acvHeaderAfterQuoteSkip}{5mm}
+\newcommand{\acvHeaderAfterQuoteSkip}{-1.5mm}
 
 % Others
 \newcommand{\acvSectionTopSkip}{3mm}
@@ -577,6 +577,17 @@
   \end{tabular*}%
 }
 
+\newenvironment{cvitemize}{
+  \vspace{1mm}
+  \begin{center}
+  \begin{itemize}[leftmargin=4ex, nosep, noitemsep]
+    \setlength{\parskip}{0pt}
+    \renewcommand{\labelitemi}{\bullet}
+}{
+  \end{itemize}
+  \end{center}
+  \vspace{2mm}
+}
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
   \begin{center}
