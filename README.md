@@ -58,6 +58,10 @@ At a command prompt, run
 ```bash
 $ xelatex {your-cv}.tex
 ```
+```bash
+# With docker use following command
+$ docker run -it -v `pwd`:/doc/ -v  `pwd`/examples/fonts/:/usr/share/fonts/external/ thomasweise/texlive make
+```
 
 This should result in the creation of ``{your-cv}.pdf``
 
