@@ -10,7 +10,7 @@ jobs:
       - run:
           name: Compile
           command: |
-            cp examples/fonts/* usr/share/fonts/external/
+            cp examples/fonts/* /usr/share/fonts/external/
             make
       - run:
           name: Move artifacts
