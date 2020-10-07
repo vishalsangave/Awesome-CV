@@ -9,7 +9,9 @@ jobs:
       - checkout
       - run:
           name: Compile
-          command: make
+          command: |
+            cp examples/fonts/* usr/share/fonts/external/
+            make
       - run:
           name: Move artifacts
           command: |
