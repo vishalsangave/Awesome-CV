@@ -833,7 +833,7 @@
   \begin{itemize}[leftmargin=4ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
     \renewcommand{\labelitemi}{\bullet}
-}{
+}{%
   \end{itemize}
   \end{center}
   \vspace{2mm}
