@@ -827,7 +827,17 @@
   \end{justify}
   \vspace{1.0mm}
 }
-
+\newenvironment{cvitemize}{
+  \vspace{1mm}
+  \begin{center}
+  \begin{itemize}[leftmargin=4ex, nosep, noitemsep]
+    \setlength{\parskip}{0pt}
+    \renewcommand{\labelitemi}{\bullet}
+}{
+  \end{itemize}
+  \end{center}
+  \vspace{2mm}
+}
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of Cover Letter
