@@ -23,15 +23,12 @@
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-% Specify the location of the included fonts
-\fontdir[fonts/]
-
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+% \definecolor{awesome}{HTML}{3E6D9C}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -39,6 +36,7 @@
 % \definecolor{text}{HTML}{333333}
 % \definecolor{graytext}{HTML}{5D5D5D}
 % \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
@@ -54,7 +52,7 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
 \name{Vishal}{Sangave}
-\position{SDET{\enskip\cdotp\enskip}Automation {\enskip\cdotp\enskip}DevOPS {\enskip\cdotp\enskip}SRE}
+\position{SDET{\enskip\cdotp\enskip}Automation {\enskip\cdotp\enskip}DevOps {\enskip\cdotp\enskip}AI {\enskip\cdotp\enskip}SRE}
 \address{Omkar Colony, Shrinagar Rahatni Road, Pimpri , Pune, 411-017}
 
 \mobile{(+91) 99-2242-5466}
@@ -64,17 +62,28 @@
 \homepage{about.me/vishal.sangave}
 % \gitlab{gitlab-id}
 \stackoverflow{799297}{lah2iv}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
+% \x{x-id}
 % \skype{skype-id}
 % \reddit{reddit-id}
-% \extrainfo{extra informations}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \telegram{telegram-username}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
 
 \quote{``Be the change that you want to see in the world."}
+
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
+% Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader[C]
 
@@ -92,12 +101,13 @@
 %-------------------------------------------------------------------------------
 \input{resume/summary.tex}
 \input{resume/experience.tex}
+% \input{resume/honors.tex}
+\input{resume/certificates.tex}
+\input{resume/presentation.tex}
+% \input{resume/writing.tex}
+% \input{resume/committees.tex}
 \input{resume/education.tex}
-\input{resume/technical.tex}
-%\input{resume/presentation.tex}
-%\input{resume/writing.tex}
-%\input{resume/committees.tex}
-%\input{resume/extracurricular.tex}
+% \input{resume/extracurricular.tex}
 
 
 %-------------------------------------------------------------------------------
